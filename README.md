@@ -7,4 +7,4 @@ For this activity I started with a basic HTML file by using the HTML-5 code. Fro
 
 # Deployed Site
 
-
+https://giulia037.github.io/Password-Generator/
