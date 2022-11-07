@@ -1,4 +1,3 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -9,7 +8,6 @@ var uppercaseCheck;
 var numberCheck;
 var specialCheck;
 
-//Function used to determine the length of the password
 function determineLength(){
   passwordLength = prompt("Choose how many characters long you'd like your password to be (between 8-128 characters): ");
 
@@ -28,7 +26,6 @@ function determineLength(){
     return passwordLength;
 }
 
-//Function used to determine whether the user wants to include uppercase characters in the password
 function determineUppercase(){
   uppercaseCheck = prompt("Do you want to include uppercase letters in your password? \n(Yes or No)");
     uppercaseCheck = uppercaseCheck.toLowerCase();
@@ -52,7 +49,6 @@ function determineUppercase(){
     return uppercaseCheck;
 }
 
-//Function used to determine whether the user wants to include numbers in the password
 function determineNumbers(){
   numberCheck = prompt("Do you want to include numbers in your password? \n(Yes or No)");
     numberCheck = numberCheck.toLowerCase();
@@ -76,7 +72,6 @@ function determineNumbers(){
     return numberCheck;
 }
 
-//Function used to determine whether the user wants to include special characters in the password
 function determineSpecial(){
   specialCheck = prompt("Do you want to include special characters in your password? \n(Yes or No)");
     specialCheck = specialCheck.toLowerCase();
@@ -100,8 +95,7 @@ function determineSpecial(){
     return specialCheck;
 }
 
- //Function used to take all the input from the previous functions and generate a password using a random number generator and 
- //the charAt method 
+
 function generatePassword(){
   determineLength();
   console.log(passwordLength);
@@ -145,7 +139,6 @@ if (uppercaseCheck && numberCheck && specialCheck){
   return password;
 }
 
-// Write password to the #password input
 function writePassword() {
   var password1 = "";
   password1 = generatePassword();
@@ -153,9 +146,5 @@ function writePassword() {
   passwordText.value = password1;
 }
 
-// function resetText(){
-//   document.getElementById("password").value = "Your Secure Password";
-// }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
