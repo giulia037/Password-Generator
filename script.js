@@ -34,7 +34,7 @@ var generatePassword = function() {
   
 
 
-        if (letterLowerCase === "yes" ,letterUpperCase === "yes" ,specialCharacters === "yes" , numeric === "yes") {
+        if (letterLowerCase = "yes" ,letterUpperCase = "yes" ,specialCharacters = "yes" , numeric = "yes") {
           var characters = (allPasswordInput)
           var password = "";
           var result = password;
@@ -44,7 +44,7 @@ var generatePassword = function() {
         return result;
 
 
-      } else if (letterLowerCase === "yes" ,letterUpperCase === "yes" , specialCharacters === "yes" , numeric === "no") {
+      } else if (letterLowerCase = "yes" ,letterUpperCase = "yes" , specialCharacters = "yes" , numeric = "no") {
           var characters = (allPasswordInput);
           var password = "";
           var result = password;
@@ -74,7 +74,7 @@ var generatePassword = function() {
          return result;
 
 
-        } else if (letterLowerCase === "no" ,letterUpperCase === "yes" ,specialCharacters === "yes" ,numeric === "yes") {
+        } else if (letterLowerCase = "no" ,letterUpperCase = "yes" ,specialCharacters = "yes" ,numeric = "yes") {
           var characters = (allPasswordInput);
           password = "";
           var result = password;
